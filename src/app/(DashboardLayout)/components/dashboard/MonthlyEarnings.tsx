@@ -6,6 +6,8 @@ import { Stack, Typography, Avatar, Fab } from '@mui/material';
 import { IconArrowDownRight, IconCurrencyDollar } from '@tabler/icons-react';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
 
+// import { yekhanBakh } from "@/styles/fonts";
+
 const MonthlyEarnings = () => {
   // chart color
   const theme = useTheme();
@@ -56,7 +58,7 @@ const MonthlyEarnings = () => {
     <DashboardCard
       title="Monthly Earnings"
       action={
-        <Fab color="secondary" size="medium" sx={{color: '#ffffff'}}>
+        <Fab color="secondary" size="medium" sx={{ color: '#ffffff' }}>
           <IconCurrencyDollar width={24} />
         </Fab>
       }
@@ -75,7 +77,7 @@ const MonthlyEarnings = () => {
           <Typography variant="subtitle2" fontWeight="600">
             +9%
           </Typography>
-          <Typography variant="subtitle2" color="textSecondary">
+          <Typography variant="subtitle2" color="textSecondary" >
             last year
           </Typography>
         </Stack>

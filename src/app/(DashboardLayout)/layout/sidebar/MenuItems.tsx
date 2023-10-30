@@ -10,6 +10,7 @@ import {
 
 import { uniqueId } from "lodash";
 
+
 const Menuitems = [
   {
     navlabel: true,
@@ -18,7 +19,7 @@ const Menuitems = [
 
   {
     id: uniqueId(),
-    title: "Dashboard",
+    title: "دشبورد",
     icon: IconLayoutDashboard,
     href: "/",
   },
