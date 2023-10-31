@@ -23,7 +23,7 @@ interface Props {
   csrfToken: string | undefined;
 }
 
-const AuthLoginForm = async ({ csrfToken }: Props) => {
+const AuthLoginForm = ({ csrfToken }: Props) => {
   const router = useRouter();
   const [error, setError] = React.useState<string | null>();
   const formik = useFormik({
@@ -135,8 +135,6 @@ const AuthLoginForm = async ({ csrfToken }: Props) => {
           variant="contained"
           size="large"
           fullWidth
-          component={Link}
-          href="/"
           type="submit"
         >
           Sign In
