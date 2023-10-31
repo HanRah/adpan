@@ -23,6 +23,7 @@
     "apexcharts": "3.41.1",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "formik": "^2.4.5",
     "lodash": "4.17.21",
     "next": "13.4.12",
     "next-auth": "^4.24.4",
