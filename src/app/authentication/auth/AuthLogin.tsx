@@ -24,7 +24,14 @@ interface loginType {
   subtext?: JSX.Element | JSX.Element[];
 }
 
+// async function GetServerSideCsrfToken() {
+//   const csrfToken = await GetServerSideCsrfToken()
+//   return csrfToken
+// }
+
+
 const AuthLogin = ({ title, subtitle, subtext }: loginType, { csrfToken }: { csrfToken?: string }) => {
+  // const csrfToken = await GetServerSideCsrfToken()
   const router = useRouter();
   const [error, setError] = React.useState<string | null>();
   const formik = useFormik({
