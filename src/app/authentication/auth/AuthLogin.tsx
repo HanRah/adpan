@@ -15,8 +15,10 @@ import Stack from "@mui/material/Stack";
 import Checkbox from "@mui/material/Checkbox";
 
 import Link from "next/link";
+import { getCsrfToken } from "next-auth/react";
 
 import CustomTextField from "@/app/(DashboardLayout)/components/forms/theme-elements/CustomTextField";
+
 
 interface loginType {
   title?: string;
@@ -24,14 +26,14 @@ interface loginType {
   subtext?: JSX.Element | JSX.Element[];
 }
 
-// async function GetServerSideCsrfToken() {
-//   const csrfToken = await GetServerSideCsrfToken()
-//   return csrfToken
-// }
+async function GetServerSideCsrfToken() {
+  const csrfToken: string | undefined = await getCsrfToken()
+  return csrfToken
+}
 
 
-const AuthLogin = ({ title, subtitle, subtext }: loginType, { csrfToken }: { csrfToken?: string }) => {
-  // const csrfToken = await GetServerSideCsrfToken()
+const AuthLogin = async ({ title, subtitle, subtext }: loginType) => {
+  const csrfToken = await GetServerSideCsrfToken()
   const router = useRouter();
   const [error, setError] = React.useState<string | null>();
   const formik = useFormik({
