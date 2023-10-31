@@ -6,6 +6,7 @@ import { Grid, Stack, Typography, Avatar } from '@mui/material';
 import { IconArrowUpLeft } from '@tabler/icons-react';
 
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
+import { yekhanBakh } from "@/styles/fonts";
 
 const YearlyBreakup = () => {
   // chart color
@@ -18,7 +19,7 @@ const YearlyBreakup = () => {
   const optionscolumnchart: any = {
     chart: {
       type: 'donut',
-      fontFamily: "'Plus Jakarta Sans', sans-serif;",
+      fontFamily: yekhanBakh.style.fontFamily,
       foreColor: '#adb0bb',
       toolbar: {
         show: false,

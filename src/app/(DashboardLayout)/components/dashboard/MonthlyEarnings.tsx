@@ -5,8 +5,8 @@ import { useTheme } from '@mui/material/styles';
 import { Stack, Typography, Avatar, Fab } from '@mui/material';
 import { IconArrowDownRight, IconCurrencyDollar } from '@tabler/icons-react';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
-
 import { yekhanBakh } from "@/styles/fonts";
+
 
 const MonthlyEarnings = () => {
   // chart color
@@ -19,7 +19,7 @@ const MonthlyEarnings = () => {
   const optionscolumnchart: any = {
     chart: {
       type: 'area',
-      fontFamily: "'Plus Jakarta Sans', sans-serif;",
+      fontFamily: yekhanBakh.style.fontFamily,
       foreColor: '#adb0bb',
       toolbar: {
         show: false,
@@ -77,7 +77,7 @@ const MonthlyEarnings = () => {
           <Typography variant="subtitle2" fontWeight="600">
             +9%
           </Typography>
-          <Typography variant="subtitle2" color="textSecondary" className={yekhanBakh.className}>
+          <Typography variant="subtitle2" color="textSecondary" >
             last year
           </Typography>
         </Stack>

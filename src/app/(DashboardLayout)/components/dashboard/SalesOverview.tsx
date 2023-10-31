@@ -3,6 +3,7 @@ import { Select, MenuItem } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
 import dynamic from "next/dynamic";
+import { yekhanBakh } from '@/styles/fonts';
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 
@@ -24,7 +25,7 @@ const SalesOverview = () => {
     const optionscolumnchart: any = {
         chart: {
             type: 'bar',
-            fontFamily: "'Plus Jakarta Sans', sans-serif;",
+            fontFamily: yekhanBakh.style.fontFamily,
             foreColor: '#adb0bb',
             toolbar: {
                 show: true,
@@ -48,7 +49,7 @@ const SalesOverview = () => {
             width: 5,
             lineCap: "butt",
             colors: ["transparent"],
-          },
+        },
         dataLabels: {
             enabled: false,
         },

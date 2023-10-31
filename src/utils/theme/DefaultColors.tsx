@@ -1,5 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { yekhanBakh } from "@/styles/fonts";
 
 export const plus = Plus_Jakarta_Sans({
   weight: ["300", "400", "500", "600", "700"],
@@ -65,62 +66,70 @@ const baselightTheme = createTheme({
     divider: "#e5eaef",
   },
   typography: {
-    fontFamily: plus.style.fontFamily,
+    fontFamily: yekhanBakh.style.fontFamily,
     h1: {
       fontWeight: 600,
       fontSize: "2.25rem",
       lineHeight: "2.75rem",
-      fontFamily: plus.style.fontFamily,
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     h2: {
       fontWeight: 600,
       fontSize: "1.875rem",
       lineHeight: "2.25rem",
-      fontFamily: plus.style.fontFamily,
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     h3: {
       fontWeight: 600,
       fontSize: "1.5rem",
       lineHeight: "1.75rem",
-      fontFamily: plus.style.fontFamily,
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     h4: {
       fontWeight: 600,
       fontSize: "1.3125rem",
       lineHeight: "1.6rem",
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     h5: {
       fontWeight: 600,
       fontSize: "1.125rem",
       lineHeight: "1.6rem",
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     h6: {
       fontWeight: 600,
       fontSize: "1rem",
       lineHeight: "1.2rem",
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     button: {
       textTransform: "capitalize",
       fontWeight: 400,
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     body1: {
       fontSize: "0.875rem",
       fontWeight: 400,
       lineHeight: "1.334rem",
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     body2: {
       fontSize: "0.75rem",
       letterSpacing: "0rem",
       fontWeight: 400,
       lineHeight: "1rem",
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     subtitle1: {
       fontSize: "0.875rem",
       fontWeight: 400,
+      fontFamily: yekhanBakh.style.fontFamily,
     },
     subtitle2: {
       fontSize: "0.875rem",
       fontWeight: 400,
+      fontFamily: yekhanBakh.style.fontFamily,
     },
   },
   components: {
@@ -136,6 +145,7 @@ const baselightTheme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: "7px",
+          fontFamily: yekhanBakh.style.fontFamily,
         },
       },
     },

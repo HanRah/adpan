@@ -38,6 +38,7 @@ const NavItem = ({ item, level, pathDirect, onClick }: ItemType) => {
   const ListItemStyled = styled(ListItem)(() => ({
     padding: 0,
     ".MuiButtonBase-root": {
+      textAlign: 'right',
       whiteSpace: "nowrap",
       marginBottom: "2px",
       padding: "8px 10px",
