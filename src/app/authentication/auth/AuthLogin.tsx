@@ -24,9 +24,9 @@ const AuthLogin = async ({ title, subtitle, subtext }: loginType) => {
   const csrfToken = await getServerSideCsrfToken();
   const session = await getServerSession(authOptions);
 
-  // if (session) {
-  //   redirect("/");
-  // }
+  if (session) {
+    redirect("/");
+  }
 
   return (
     <>

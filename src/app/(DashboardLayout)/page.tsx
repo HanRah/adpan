@@ -12,3 +12,5 @@ const Dashboard = async () => {
   }
   return <DashboardContent />;
 };
+
+export default Dashboard;
