@@ -5,7 +5,7 @@ import { useTheme } from '@mui/material/styles';
 import { Stack, Typography, Avatar, Fab } from '@mui/material';
 import { IconArrowDownRight, IconCurrencyDollar } from '@tabler/icons-react';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
-import { yekhanBakh } from "@/styles/fonts";
+
 
 
 const MonthlyEarnings = () => {
@@ -18,8 +18,9 @@ const MonthlyEarnings = () => {
   // chart
   const optionscolumnchart: any = {
     chart: {
+      with: 300,
       type: 'area',
-      fontFamily: yekhanBakh.style.fontFamily,
+      fontFamily: "'Plus Jakarta Sans', sans-serif;",
       foreColor: '#adb0bb',
       toolbar: {
         show: false,
@@ -63,7 +64,7 @@ const MonthlyEarnings = () => {
         </Fab>
       }
       footer={
-        <Chart options={optionscolumnchart} series={seriescolumnchart} type="area" height="60px" />
+        <Chart width='100%' options={optionscolumnchart} series={seriescolumnchart} type="area" height="60px" />
       }
     >
       <>

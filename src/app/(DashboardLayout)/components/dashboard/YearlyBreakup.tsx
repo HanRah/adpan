@@ -6,7 +6,6 @@ import { Grid, Stack, Typography, Avatar } from '@mui/material';
 import { IconArrowUpLeft } from '@tabler/icons-react';
 
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
-import { yekhanBakh } from "@/styles/fonts";
 
 const YearlyBreakup = () => {
   // chart color
@@ -18,8 +17,9 @@ const YearlyBreakup = () => {
   // chart
   const optionscolumnchart: any = {
     chart: {
+      with: 300,
       type: 'donut',
-      fontFamily: yekhanBakh.style.fontFamily,
+      fontFamily: "'Plus Jakarta Sans', sans-serif;",
       foreColor: '#adb0bb',
       toolbar: {
         show: false,
@@ -67,7 +67,7 @@ const YearlyBreakup = () => {
     <DashboardCard title="Yearly Breakup">
       <Grid container spacing={3}>
         {/* column */}
-        <Grid item xs={7} sm={7}>
+        <Grid item xs={7}>
           <Typography variant="h3" fontWeight="700">
             $36,358
           </Typography>
@@ -102,8 +102,9 @@ const YearlyBreakup = () => {
           </Stack>
         </Grid>
         {/* column */}
-        <Grid item xs={5} sm={5}>
+        <Grid item xs={5}>
           <Chart
+            width='100%'
             options={optionscolumnchart}
             series={seriescolumnchart}
             type="donut"
