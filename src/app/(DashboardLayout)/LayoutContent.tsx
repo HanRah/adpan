@@ -1,6 +1,11 @@
 "use client";
-import { styled, Container, Box } from "@mui/material";
+
 import React, { useState } from "react";
+
+import { styled } from "@mui/material";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+
 import Header from "@/app/(DashboardLayout)/layout/header/Header";
 import Sidebar from "@/app/(DashboardLayout)/layout/sidebar/Sidebar";
 
