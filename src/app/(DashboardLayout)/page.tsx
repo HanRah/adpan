@@ -7,10 +7,11 @@ const Dashboard = async () => {
   const session = await getServerSession(authOptions);
   console.log(session);
 
-  if (!session) {
+  if (session) {
+    return (<DashboardContent />);
+  } else {
     redirect("/authentication/login");
   }
-  return <DashboardContent />;
 };
 
 export default Dashboard;
