@@ -16,8 +16,13 @@ export const authOptions: NextAuthOptions = {
             async authorize(credentials, req) {
                 const user = { id: "1", name: credentials?.username, email: credentials?.username }
 
+                // API Call
+                const jwt = ''
+
+
+
                 if (user) {
-                    return user
+                    return {...user, accessToken: jwt}
                 } else {
                     return null
                 }

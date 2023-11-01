@@ -20,8 +20,8 @@ async function getServerSideCsrfToken() {
   return csrfToken;
 }
 
-const AuthLogin = async ({ title, subtitle, subtext }: loginType) => {
-  const csrfToken = await getServerSideCsrfToken();
+const AuthLogin = ({ title, subtitle, subtext }: loginType) => {
+  // const csrfToken = await getServerSideCsrfToken();
   // const session = await getServerSession(authOptions);
 
   // if (session) {
@@ -36,7 +36,7 @@ const AuthLogin = async ({ title, subtitle, subtext }: loginType) => {
         </Typography>
       ) : null}
       {subtext}
-      <AuthLoginForm csrfToken={csrfToken} />
+      <AuthLoginForm csrfToken={''} />
 
       {subtitle}
     </>
